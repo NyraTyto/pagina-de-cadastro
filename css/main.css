@@ -48,7 +48,7 @@ h1 {
 .row {
   display: flex;
   align-items: center;
-  padding: 8px;
+  padding: 6px;
 }
 
 .group {
@@ -124,10 +124,13 @@ button {
   width: 140px;
   border: none;
   margin-top: 10px;
+
   font-size: 16px;
   font-weight: bold;
   color: #fff;
+
   background-color: #ffbc00;
+  -webkit-transition:background 0.5s ease-out;
 }
 
 button:nth-child(even) {
@@ -136,5 +139,18 @@ button:nth-child(even) {
 
 button:hover {
   background-color: #ffca39;
-  transition: 0.5;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 25px;
+  text-align: center;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffae00;
 }
