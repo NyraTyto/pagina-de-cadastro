@@ -93,7 +93,7 @@ textarea {
   margin-right: 10px;
 }
 
-/* Section Second */
+/* Second Section */
 
 #second {
   padding: 10px;
@@ -102,7 +102,7 @@ textarea {
   background-color: #eee;
 }
 
-/* Section Terms */
+/* Terms Section */
 
 #terms a {
   font-weight: bold;
@@ -130,7 +130,6 @@ button {
   color: #fff;
 
   background-color: #ffbc00;
-  -webkit-transition:background 0.5s ease-out;
 }
 
 button:nth-child(even) {
@@ -153,4 +152,19 @@ footer a {
   font-weight: bold;
   text-decoration: none;
   color: #ffae00;
+  transition: 0.3s;
+}
+
+/* Success Page */
+
+.success {
+  text-align: center;
+}
+
+.success-footer a {
+  color: #000;
+}
+
+.success-footer a:hover {
+  color: #ff5e00;
 }
