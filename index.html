@@ -1,162 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Página de Cadastro</title>
+    <title>Página de Cadastro</title>
 
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/responsivity.css">
-</head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsivity.css">
+  </head>
 
-<body class="flex-row">
-  <div class="container">
-    <header>
-      <h1>Cadastre-se</h1>
-    </header>
+  <body class="flex-row">
+    <div class="container">
+      <header>
+        <h1>Cadastre-se</h1>
+      </header>
 
-    <main>
-      <form action="./success.html" method="POST">
-        <section id="main">
-          <div class="row">
-            <div class="group">
-              <label for="email"><span>*</span> Email:</label>
-              <input type="email" name="email" id="email" placeholder="exemplo@mail.com" required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="group">
-              <label for="password"><span>*</span> Senha:</label>
-              <input type="password" name="password" id="password" placeholder="Digite a sua senha" required>
-            </div>
-            <div class="group">
-              <label for="password2"><span>*</span> Confirmar Senha:</label>
-              <input type="password" name="password2" id="password2" placeholder="Confirme a sua senha" required>
-            </div>
-          </div>
-        </section>
-
-        <section id="second">
-          <div class="row">
-            <div class="group">
-              <label for="name"><span>*</span> Nome:</label>
-              <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
-            </div>
-            <div class="group">
-              <label for="surname"><span>*</span> Sobrenome:</label>
-              <input type="text" name="surname" id="surname" placeholder="Digite o seu sobrenome" required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="group">
-              <label for="cpf"><span>*</span> CPF:</label>
-              <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
-            </div>
-            <div class="group">
-              <label for="gender"><span>*</span> Sexo:</label>
-              <div class="gender flex-row">
-                <div class="female">
-                  <label for="f">Feminino</label>
-                  <input type="radio" name="gender" id="f" checked>
-                </div>
-                <div class="male">
-                  <label for="m">Masculino</label>
-                  <input type="radio" name="gender" id="m">
-                </div>
+      <main>
+        <form action="./datas.html" method="POST">
+          <section id="main">
+            <div class="row">
+              <div class="group">
+                <label for="email">
+                  <span>*</span>
+                  Email:</label>
+                <input type="email" name="email" id="email" placeholder="exemplo@mail.com" required="required">
               </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="group">
-              <label for="address"><span>*</span> Endereço:</label>
-              <input type="text" name="address" id="address" placeholder="Digite o seu endereço" required>
+            <div class="row">
+              <div class="group">
+                <label for="password">
+                  <span>*</span>
+                  Senha:</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha" required="required">
+              </div>
+              <div class="group">
+                <label for="password2">
+                  <span>*</span>
+                  Confirmar Senha:</label>
+                <input type="password" name="password2" id="password2" placeholder="Confirme a sua senha" required="required">
+              </div>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="group">
-              <label for="complement">Complemento:</label>
-              <input type="text" name="complement" id="complement" placeholder="Casa, Apto etc.">
+            <div class="buttons flex-row">
+              <button>Próximo</button>
+              <button type="reset">Limpar</button>
             </div>
-            <div class="group">
-              <label for="cep"><span>*</span> CEP:</label>
-              <input type="number" name="cep" id="cep" placeholder="00000-000" required>
-            </div>
-          </div>
+          </section>
+        </form>
+      </main>
 
-          <div class="row">
-            <div class="group">
-              <label for="city"><span>*</span> Cidade:</label>
-              <input type="text" name="city" id="city" placeholder="Digite a sua cidade" required>
-            </div>
-            <div class="group">
-              <label for="uf"><span>*</span> Estado:</label>
-              <input type="text" name="uf" id="uf" placeholder="Digite o seu Estado" required>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="group">
-              <label for="phone">Telefone:</label>
-              <input type="number" name="phone" id="phone" placeholder="(00) 0000-0000">
-            </div>
-            <div class="group">
-              <label for="cel">Celular:</label>
-              <input type="number" name="cel" id="cel" placeholder="(00) 00000-0000">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="group">
-              <label for="how"><span>*</span> Como nos conheceu?</label>
-              <select name="how" id="how" required>
-                <option value="0">Selecione...</option>
-                <option value="friend">Através de um amigo</option>
-                <option value="ads">Através de uma propaganda</option>
-                <option value="study">Através da escola/faculdade</option>
-                <option value="youtube">Através do Youtube</option>
-                <option value="other">Outro</option>
-              </select>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="group">
-              <label for="sugestions">Sugestões:</label>
-              <textarea name="sugestions" id="sugestions" maxlength="300"
-                placeholder="Máximo 300 caracteres"></textarea>
-            </div>
-          </div>
-        </section>
-
-        <section id="terms">
-          <div class="row">
-            <input type="checkbox" name="notif-accepted" id="notif-accepted">
-            <label for="notif-accepted">Deseja receber novidades por e-mail?</label>
-          </div>
-
-          <div class="row">
-            <input type="checkbox" name="terms-accepted" id="terms-accepted" required>
-            <label for="terms-accepted"><span>*</span> Aceito os <a href="">termos de uso</a>.</label>
-          </div>
-        </section>
-
-        <div class="buttons flex-row">
-          <button>Cadastrar</button>
-          <button type="reset">Limpar</button>
-        </div>
-      </form>
-    </main>
-
-    <footer>
-      &copy; Created by <a href="https://www.linkedin.com/in/juana-paiva/">Juana Paiva</a>
-    </footer>
-  </div>
-</body>
+      <footer>
+        &copy; Created by
+        <a href="https://www.linkedin.com/in/juana-paiva/" target="_blank">Juana Paiva</a>
+      </footer>
+    </div>
+  </body>
 
 </html>

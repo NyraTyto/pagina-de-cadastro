@@ -23,7 +23,6 @@ body {
 .container {
   width: 100%;
   max-width: 800px;
-  height: auto;
   padding: 22px;
   border-radius: 10px;
   background-color: #fff;
@@ -72,6 +71,10 @@ input:focus, select:focus, textarea:focus {
   border: 1px solid #ffa600;
 }
 
+label {
+  margin-bottom: 5px;
+}
+
 span {
   color: #ffa600;
 }
@@ -81,7 +84,7 @@ span {
 }
 
 .gender input {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 textarea {
@@ -95,7 +98,7 @@ textarea {
 
 /* Second Section */
 
-#second {
+#datas {
   padding: 10px;
   border-radius: 10px;
   margin: 10px 0;
@@ -120,10 +123,11 @@ textarea {
   justify-content: center;
 }
 
-button {
+button,
+.buttons a {
   width: 140px;
   border: none;
-  margin-top: 10px;
+  margin: 10px 10px 0 10px;
 
   font-size: 16px;
   font-weight: bold;
@@ -132,11 +136,19 @@ button {
   background-color: #ffbc00;
 }
 
-button:nth-child(even) {
-  margin-left: 10px;
+.buttons a {
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+
+  font-size: 19px;
+  text-decoration: none;
+  color: #fff;
 }
 
-button:hover {
+button:hover,
+.buttons a:hover {
   background-color: #ffca39;
   cursor: pointer;
 }
@@ -151,20 +163,16 @@ footer {
 footer a {
   font-weight: bold;
   text-decoration: none;
-  color: #ffae00;
+  color: #000;
   transition: 0.3s;
+}
+
+footer a:hover {
+  color: #ffa600;
 }
 
 /* Success Page */
 
 .success {
   text-align: center;
-}
-
-.success-footer a {
-  color: #000;
-}
-
-.success-footer a:hover {
-  color: #ff5e00;
 }

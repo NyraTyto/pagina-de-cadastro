@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Final</title>
+
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/responsivity.css">
+  </head>
+
+  <body class="flex-row">
+    <div class="container">
+      <header>
+        <h1>Para finalizar...</h1>
+      </header>
+      <main>
+        <form action="./success.html" method="POST">
+        <section id="comments">
+          <div class="row">
+            <div class="group">
+              <label for="how">
+                <span>*</span>
+                Como nos conheceu?</label>
+              <select name="how" id="how" required="required">
+                <option value="0" disabled selected>Selecione...</option>
+                <option value="friend">Através de um amigo</option>
+                <option value="ads">Através de uma propaganda</option>
+                <option value="study">Através da escola/faculdade</option>
+                <option value="youtube">Através do Youtube</option>
+                <option value="other">Outro</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="group">
+              <label for="sugestions">Sugestões:</label>
+              <textarea name="sugestions" id="sugestions" maxlength="300" placeholder="Máximo 300 caracteres"></textarea>
+            </div>
+          </div>
+        </section>
+
+        <section id="terms">
+          <div class="row">
+            <input type="checkbox" name="notif-accepted" id="notif-accepted">
+            <label for="notif-accepted">Deseja receber novidades por e-mail?</label>
+          </div>
+
+          <div class="row">
+            <input type="checkbox" name="terms-accepted" id="terms-accepted" required="required">
+            <label for="terms-accepted">
+              <span>*</span>
+              Aceito os
+              <a href="#" target="_blank">termos de uso</a>.</label>
+          </div>
+        </section>
+
+        <div class="buttons flex-row">
+          <a href="./datas.html" class="flex-row">Voltar</a>
+          <button>Cadastrar</button>
+          <button type="reset">Limpar</button>
+        </div>
+      </main>
+
+      <footer>
+        &copy; Created by
+        <a href="https://www.linkedin.com/in/juana-paiva/" target="_blank">Juana Paiva</a>
+      </footer>
+    </form>
+  </div>
+</body>
+</html>
