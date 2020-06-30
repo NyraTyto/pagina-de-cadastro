@@ -7,7 +7,7 @@
 
   <title>Página de Cadastro</title>
 
-  <link rel="stylesheet" href="./css/form.css">
+  <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body class="flex-row">
@@ -21,18 +21,18 @@
         <section id="main">
           <div class="row">
             <div class="group">
-              <label for="email">Email:</label>
+              <label for="email"><span>*</span> Email:</label>
               <input type="email" name="email" id="email" placeholder="exemplo@mail.com" required>
             </div>
           </div>
 
           <div class="row">
             <div class="group">
-              <label for="password">Senha:</label>
+              <label for="password"><span>*</span> Senha:</label>
               <input type="password" name="password" id="password" placeholder="Digite a sua senha" required>
             </div>
             <div class="group">
-              <label for="password2">Confirmar Senha:</label>
+              <label for="password2"><span>*</span> Confirmar Senha:</label>
               <input type="password" name="password2" id="password2" placeholder="Confirme a sua senha" required>
             </div>
           </div>
@@ -41,34 +41,38 @@
         <section id="second">
           <div class="row">
             <div class="group">
-              <label for="name">Nome:</label>
+              <label for="name"><span>*</span> Nome:</label>
               <input type="text" name="name" id="name" placeholder="Digite o seu nome" required>
             </div>
             <div class="group">
-              <label for="surname">Sobrenome:</label>
+              <label for="surname"><span>*</span> Sobrenome:</label>
               <input type="text" name="surname" id="surname" placeholder="Digite o seu sobrenome" required>
             </div>
           </div>
 
           <div class="row">
             <div class="group">
-              <label for="cpf">CPF:</label>
+              <label for="cpf"><span>*</span> CPF:</label>
               <input type="number" name="cpf" id="cpf" placeholder="000.000.000-00" required>
             </div>
             <div class="group">
-              <label for="gender">Sexo:</label>
-              <div class="gender">
-                <label for="f">Feminino</label>
-                <input type="radio" name="gender" id="f" checked>
-                <label for="m">Masculino</label>
-                <input type="radio" name="gender" id="m">
+              <label for="gender"><span>*</span> Sexo:</label>
+              <div class="gender flex-row">
+                <div class="female">
+                  <label for="f">Feminino</label>
+                  <input type="radio" name="gender" id="f" checked>
+                </div>
+                <div class="male">
+                  <label for="m">Masculino</label>
+                  <input type="radio" name="gender" id="m">
+                </div>
               </div>
             </div>
           </div>
 
           <div class="row">
             <div class="group">
-              <label for="address">Endereço:</label>
+              <label for="address"><span>*</span> Endereço:</label>
               <input type="text" name="address" id="address" placeholder="Digite o seu endereço" required>
             </div>
           </div>
@@ -79,18 +83,18 @@
               <input type="text" name="complement" id="complement" placeholder="Casa, Apto etc.">
             </div>
             <div class="group">
-              <label for="cep">CEP:</label>
+              <label for="cep"><span>*</span> CEP:</label>
               <input type="number" name="cep" id="cep" placeholder="00000-000" required>
             </div>
           </div>
 
           <div class="row">
             <div class="group">
-              <label for="city">Cidade:</label>
+              <label for="city"><span>*</span> Cidade:</label>
               <input type="text" name="city" id="city" placeholder="Digite a sua cidade" required>
             </div>
             <div class="group">
-              <label for="uf">Estado:</label>
+              <label for="uf"><span>*</span> Estado:</label>
               <input type="text" name="uf" id="uf" placeholder="Digite o seu Estado" required>
             </div>
           </div>
@@ -108,7 +112,7 @@
 
           <div class="row">
             <div class="group">
-              <label for="how">Como nos conheceu?</label>
+              <label for="how"><span>*</span> Como nos conheceu?</label>
               <select name="how" id="how" required>
                 <option value="0">Selecione...</option>
                 <option value="friend">Através de um amigo</option>
@@ -127,7 +131,9 @@
                 placeholder="Máximo 300 caracteres"></textarea>
             </div>
           </div>
+        </section>
 
+        <section id="terms">
           <div class="row">
             <input type="checkbox" name="notif-accepted" id="notif-accepted">
             <label for="notif-accepted">Deseja receber novidades por e-mail?</label>
@@ -135,13 +141,15 @@
 
           <div class="row">
             <input type="checkbox" name="terms-accepted" id="terms-accepted" required>
-            <label for="terms-accepted">Aceito os <a href="">termos de uso</a>.</label>
+            <label for="terms-accepted"><span>*</span> Aceito os <a href="">termos de uso</a>.</label>
           </div>
+        </section>
 
+        <div class="buttons flex-row">
           <button>Cadastrar</button>
           <button type="reset">Limpar</button>
+        </div>
       </form>
-      </section>
     </main>
   </div>
 </body>
