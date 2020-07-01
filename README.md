@@ -10,6 +10,9 @@ O objetivo é testar os conhecimentos do aluno sobre formulários em html e suas
 A intenção era criar somente uma página, mas os campos ocupavam muito espaço e eu achei melhor separar em mais páginas.
 Também tive certa dificuldade com a responsividade, mas fiz o melhor que pude com o que sei no momento.</p>
 
+<h4>Observações</h4>
+<p>Eu retirei o action dos forms, porque aparentemente o GitHub não estava reconhecendo os botões que levavam o usuário para a próxima página. Pode ser que seja erro meu, mas a minha solução, somente para que fosse possível navegar pelas páginas, foi transformar os botões em link (com exceção do Limpar, com o tipo reset). Isso infelizmente fez com que os inputs perdessem o atributo required.</p>
+
 <hr>
 
 <h3>Tecnologias utilizadas</h3>
