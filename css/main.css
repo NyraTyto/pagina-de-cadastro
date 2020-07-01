@@ -125,7 +125,8 @@ textarea {
 
 button,
 .buttons a {
-  width: 140px;
+  width: 100%;
+  max-width: 140px;
   border: none;
   margin: 10px 10px 0 10px;
 
